@@ -14,9 +14,9 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: docker-registry-eu.mdevlab.com/mcp-portal/apache-oidc:master
+      - image: docker-registry-eu.mdevlab.com/mcp-mir/postgres:master
         name: guestbook-ui
         ports:
-        - containerPort: 80
+        - containerPort: 5432
       imagePullSecrets:
       - name: private-docker-reg
